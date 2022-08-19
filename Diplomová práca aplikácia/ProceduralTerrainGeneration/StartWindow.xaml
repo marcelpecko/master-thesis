@@ -1,0 +1,66 @@
+﻿<Window x:Class="ProceduralTerrainGeneration.StartWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProceduralTerrainGeneration"
+        mc:Ignorable="d"
+        Title="Procedural Terrain Generation" 
+        Icon="PTGicon.ico"
+        WindowState="Maximized" Height="1080" Width="1920">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <Button Grid.Column="0" Grid.Row="0" Name="rovina" Click="SelectButton">
+            <Image Source="Images/rovina.jpg" Stretch="Fill"></Image>
+        </Button>
+        <Button Grid.Column="1" Grid.Row="0" Name="dolina" Click="SelectButton">
+            <Image Source="Images/dolina.jpg" Stretch="Fill"></Image>
+        </Button>
+        <Button Grid.Column="2" Grid.Row="0" Name="kotlina" Click="SelectButton">
+            <Image Source="Images/kotlina.jpg" Stretch="Fill"></Image>
+        </Button>
+        <Button Grid.Column="3" Grid.Row="0" Name="perlin" Click="SelectButton" Content="Perlinov šum" FontWeight="Bold" FontSize="18" Background="#FFC8C8C8" BorderBrush="#FFC8C8C8" Foreground="#FF373737"/>
+        <Button Grid.Column="0" Grid.Row="1" Name="uvalina" Click="SelectButton">
+            <Image Source="Images/uvalina.jpg" Stretch="Fill"></Image>
+        </Button>
+        <Button Grid.Column="1" Grid.Row="1" Name="osamelaHora" Click="SelectButton">
+            <Image Source="Images/osamelaHora.jpg" Stretch="Fill"></Image>
+        </Button>
+        <Button Grid.Column="2" Grid.Row="1" Name="thufur" Click="SelectButton">
+            <Image Source="Images/thufur.jpg" Stretch="Fill"></Image>
+        </Button>
+        <Button Grid.Column="3" Grid.Row="1" Name="simplex" Click="SelectButton" Content="Simplexný šum" FontWeight="Bold" FontSize="18" Foreground="#FFC8C8C8" Background="#FF373737" BorderBrush="#FF373737"/>
+        <Button Grid.Column="0" Grid.Row="2" Name="meander" Click="SelectButton">
+            <Image Source="Images/meander.jpg" Stretch="Fill"></Image>
+        </Button>
+        <Button Grid.Column="1" Grid.Row="2" Name="tiesnava" Click="SelectButton">
+            <Image Source="Images/tiesnava.jpg" Stretch="Fill"></Image>
+        </Button>
+        <Button Grid.Column="2" Grid.Row="2" Name="kanon" Click="SelectButton">
+            <Image Source="Images/kanon.jpg" Stretch="Fill"></Image>
+        </Button>
+        <Button Grid.Column="3" Grid.Row="2" Name="math" Click="SelectButton" Content="  Vykresliť náhodnú &#xa;matematickú funkciu" FontWeight="Bold" FontSize="18" Foreground="#FF373737" Background="#FFC8C8C8" BorderBrush="#FFC8C8C8"/>
+        <Button Grid.Column="0" Grid.Row="3" Name="stratovulkan" Click="SelectButton">
+            <Image Source="Images/stratovulkan.jpg" Stretch="Fill"></Image>
+        </Button>
+        <Button Grid.Column="1" Grid.Row="3" Name="maar" Click="SelectButton">
+            <Image Source="Images/maar.jpg" Stretch="Fill"></Image>
+        </Button>
+        <Button Grid.Column="2" Grid.Row="3" Name="krater" Click="SelectButton">
+            <Image Source="Images/krater.jpg" Stretch="Fill"></Image>
+        </Button>
+        <Button Grid.Column="3" Grid.Row="3" Name="open" Click="SelectButton" Content="Načítať vlastnú výškovú &#xa;              mapu" FontSize="18" FontWeight="Bold" Background="#FF373737" BorderBrush="#FF373737" Foreground="#FFC8C8C8" />
+
+    </Grid>
+</Window>
